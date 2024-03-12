@@ -73,19 +73,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
             A = document.createElement('B');
             A.className = 'image-text';
-            A.style = 'background-color:transparent;border-style:none;position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #F1F1F1; font-size: 28px;opacity:0';
+            A.style = 'background-color:transparent;border-style:none;position: absolute; left: 55%; top: 50%; transform: translate(-50%, -50%); color: #F1F1F1; font-size: 28px;opacity:0';
             A.innerHTML = 'FEEL';
             document.body.appendChild(A);
 
             B = document.createElement('B');
             B.className = 'image-text';
-            B.style = 'position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%); color: #F1F1F1; font-size: 24px;opacity:0';
+            B.style = 'position: absolute; left: 55%; top: 50%; transform: translate(-50%, -50%); color: #F1F1F1; font-size: 24px;opacity:0';
             B.innerHTML = 'Understanding';
             document.body.appendChild(B);
 
             C = document.createElement('B');
             C.className = 'image-text';
-            C.style = 'position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #F1F1F1; font-size: 24px;opacity:0';
+            C.style = 'position: absolute; left: 55%; top: 50%; transform: translate(-50%, -50%); color: #F1F1F1; font-size: 24px;opacity:0';
             C.innerHTML = 'Dialogue';
             document.body.appendChild(C);
 
