@@ -1,0 +1,211 @@
+body::-webkit-scrollbar {
+    display: none;
+  }
+body
+{
+    overflow: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+.nav {
+    display: flex; /* 啟用Flexbox布局 */
+    align-items: center; /* 垂直居中導航欄中的所有項目 */
+    justify-content: space-between; /* 在項目之間添加空間，並推動最後一個項目到容器的右側 */
+    padding: 2% 7%; /* 上下內距設為2%，左右內距設為7% */
+    width: 90%; /* 這樣.nav將滿寬度 */
+}
+
+.nav .logo {
+    height: 70px; /* 或者您想要的高度 */
+    width: auto; /* 保持圖片的原始寬高比 */
+}
+
+.nav h1 {
+    margin-left: 30px;
+    padding: 0 10px; /* 根據需要添加左右內距 */
+    font-size: 1.5em; /* 或者根據您的設計調整字體大小 */
+    color: #F1F1F1;
+    font-size: 20px;
+    font-family: Archivo;
+    font-weight: 300;
+    text-transform: capitalize;
+    word-wrap: break-word
+}
+.nav .ins{
+    height: 30px;
+    margin-left: auto; /* 添加此屬性來推動元素到右側 */
+}
+.in1L{
+    max-width: 100vw;   /* 最大寬度：視窗寬度的100% */
+    max-height: 90vh;  /* 最大高度：視窗高度的100% */
+    overflow:hidden;
+    position: absolute; /* 絕對定位 */
+    transform: translate(-50%, -50%); /* 確保完全居中 */
+    z-index: 1; /* 設定堆疊順序 */
+    top: 50%; /* 或其他值，根據您的需求 */
+    left: 25%; /* 中心對齊 */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* 為淡出和變換添加平滑過渡 */
+}
+.circle{
+    position: absolute; /* 或者使用其他定位方式，取決於您的布局 */
+}
+#image2{
+    width: 300px;
+    height: 300px;
+    transform: translate(310%, 80%); 
+}
+#image3{
+    width: 100px;
+    height: 100px;
+    transform: translate(1150%, -10%); 
+}
+#image4{
+    width: 70px;
+    height: 70px;
+    transform: translate(1250%, 420%);
+}
+#image5{
+    width: 60px;
+    height: 60px;
+    transform: translate(650%, 10%);
+}
+#image6{
+    width: 35px;
+    height: 35px;
+    transform: translate(2400%, -740%); 
+}
+#image7{
+    width: 50px;
+    height: 50px;
+    transform: translate(1200%, -200%);
+}
+.arrow-button {
+    cursor: pointer; /* 讓用戶知道這是一個可以點擊的按鈕 */
+    transition: transform 0.3s ease; /* 平滑過渡效果 */
+    position: absolute; /* 或者使用其他定位方式，取決於您的布局 */
+    bottom: 20px; /* 距離底部的位置 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 確保箭頭水平居中 */
+    z-index: 2; /* 確保箭頭按鈕在圖片之上 */
+}
+.arrowbtn:hover {
+    transform: translate(-50%, -50%) scaleY(0.7);
+}
+
+.arrow-button img {
+    width: 50px; /* 或者您希望的尺寸 */
+    height: auto; /* 保持圖片的原始寬高比 */
+}
+
+.arrow-button:hover {
+    transform: translateX(-50%) scaleY(0.7); /* 懸停時縮短箭頭 */
+}
+.p1w{
+    color: #F1F1F1;
+    font-size: 32px;
+    font-family: Archivo;
+    font-weight: 900;
+    word-wrap: break-word;
+    position: absolute;
+    transform: translate(30%, 230%); 
+}
+.navbar {
+    position: absolute; /* 相对定位 */
+}
+.line {
+    position: absolute; /* 绝对定位 */
+    width: 75%; /* 线的宽度为100% */
+    height: 1px; /* 线的高度 */
+    background-color: #F1F1F1; /* 线的颜色 */
+    z-index: 0; /* 线在圆点下面 */
+    transform: translate(158%,2300%); 
+}
+.dot {
+    height: 15px; /* 圆点高度 */
+    width: 15px; /* 圆点宽度 */
+    border-radius: 50%; /* 圆角50%，形成圆形 */
+    display: inline-block; /* 内联块布局 */
+    margin: 0 50px; /* 左右外边距 */
+    border: 1px solid #F1F1F1; /* 边框设置为白色 */
+    background-color: black; /* 圆点内部填充为黑色 */
+    z-index: 1; /* 线在圆点下面 */
+    transform: translate(3000%, 80%); 
+}
+.active {
+    background-color: #F1F1F1;
+}
+#btn-this-is-me{
+    position: absolute;
+    transform: translate(250%, 980%);
+    padding: 10px 25px; /* 按钮内边距 */
+    border: 2px solid #FFFFFF; /* 白色边框 */
+    background-color: transparent; /* 透明背景 */
+    color: white; /* 白色文字 */
+    font-family: Arial, sans-serif; /* 字体样式 */
+    font-size: 20px; /* 字体大小 */
+    text-align: center; /* 文字居中 */
+    border-radius: 30px; /* 边框圆角 */
+    outline: none; /* 去掉焦点时的轮廓线 */
+    cursor: pointer; /* 鼠标悬停时的指针样式 */
+    transition: all 0.3s ease; /* 过渡效果 */
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2); /* 轻微的白色阴影 */
+}
+#btn-not-sure{
+    position: absolute; /* 绝对定位 */
+    transform: translate(570%, 980%); 
+    padding: 10px 25px; /* 按钮内边距 */
+    border: 2px solid #FFFFFF; /* 白色边框 */
+    background-color: transparent; /* 透明背景 */
+    color: white; /* 白色文字 */
+    font-family: Arial, sans-serif; /* 字体样式 */
+    font-size: 20px; /* 字体大小 */
+    text-align: center; /* 文字居中 */
+    border-radius: 30px; /* 边框圆角 */
+    outline: none; /* 去掉焦点时的轮廓线 */
+    cursor: pointer; /* 鼠标悬停时的指针样式 */
+    transition: all 0.3s ease; /* 过渡效果 */
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2); /* 轻微的白色阴影 */
+}
+#btn-not-me{
+    position: absolute; /* 绝对定位 */
+    transform: translate(980%, 980%);
+    padding: 10px 25px; /* 按钮内边距 */
+    border: 2px solid #FFFFFF; /* 白色边框 */
+    background-color: transparent; /* 透明背景 */
+    color: white; /* 白色文字 */
+    font-family: Arial, sans-serif; /* 字体样式 */
+    font-size: 20px; /* 字体大小 */
+    text-align: center; /* 文字居中 */
+    border-radius: 30px; /* 边框圆角 */
+    outline: none; /* 去掉焦点时的轮廓线 */
+    cursor: pointer; /* 鼠标悬停时的指针样式 */
+    transition: all 0.3s ease; /* 过渡效果 */
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2); /* 轻微的白色阴影 */
+}
+#btn-this-is-me:hover {
+    background-color: #FFFFFF; /* 鼠标悬停时的背景颜色 */
+    color: black; /* 鼠标悬停时的文字颜色 */
+    box-shadow: 0 6px 12px 0 rgba(255, 255, 255, 0.3); /* 鼠标悬停时的阴影 */
+}
+#btn-not-sure:hover {
+    background-color: #FFFFFF; /* 鼠标悬停时的背景颜色 */
+    color: black; /* 鼠标悬停时的文字颜色 */
+    box-shadow: 0 6px 12px 0 rgba(255, 255, 255, 0.3); /* 鼠标悬停时的阴影 */
+}
+#btn-not-me:hover {
+    background-color: #FFFFFF; /* 鼠标悬停时的背景颜色 */
+    color: black; /* 鼠标悬停时的文字颜色 */
+    box-shadow: 0 6px 12px 0 rgba(255, 255, 255, 0.3); /* 鼠标悬停时的阴影 */
+}
+#Q1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始不可见 */
+    color: #F1F1F1;
+    transition: opacity 1s ease;
+}
